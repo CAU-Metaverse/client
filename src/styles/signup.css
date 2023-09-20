@@ -1,0 +1,63 @@
+/* 나눔스퀘어 비밀번호 표시 안됨 -> 다른 글꼴로 적용 */
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
+input[type="password"] {
+  font-family: "Nanum Gothic", sans-serif !important;
+}
+
+.formInputWrap {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  border-radius: 20px;
+  padding: 14px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+
+  display: flex;
+  align-items: center;
+}
+
+.formInputWrap:focus-within {
+  border: 1px solid #5236ff;
+}
+
+.formInput {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.formInput::placeholder {
+  color: #dadada;
+}
+
+.pwErrorMessageWrap {
+  margin-top: 8px;
+  margin-left: 4px;
+  color: #ef0000;
+  font-size: 14px;
+}
+
+.createButton {
+  width: 405px;
+  height: 72px;
+
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  border-radius: 39px;
+
+  cursor: pointer;
+}
+
+.createButton:disabled {
+  background-color: #dadada;
+  color: white;
+}

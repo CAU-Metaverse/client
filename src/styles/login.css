@@ -1,0 +1,111 @@
+/* 나눔스퀘어 비밀번호 표시 안됨 -> 다른 글꼴로 적용 */
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
+input[type="password"] {
+  font-family: "Nanum Gothic", sans-serif !important;
+}
+.page {
+  position: absolute;
+  /* left: 70%; */
+  width: 520px;
+  height: 630px;
+
+  padding: 0 20px;
+  margin-top: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(-50%, 0);
+
+  background-color: #f9f9f9;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  border-radius: 50px;
+}
+
+.contentWrap {
+  margin-top: 72px;
+  flex: 1;
+}
+
+.inputTitle {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #242331;
+}
+
+.inputWrap {
+  width: 450px;
+  height: 60px;
+  display: flex;
+  border-radius: 20px;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+
+  display: flex;
+  align-items: center;
+}
+
+.inputWrap:focus-within {
+  border: 1px solid #5236ff;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: #dadada;
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 14px;
+}
+
+.buttonWrap {
+  width: 380px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.bottomButton {
+  width: 170px;
+  height: 75px;
+
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  border-radius: 39px;
+
+  margin-bottom: 72px;
+  cursor: pointer;
+}
+
+.bottomButton:disabled {
+  background-color: #dadada;
+  color: white;
+}
