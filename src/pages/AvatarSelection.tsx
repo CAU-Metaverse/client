@@ -19,7 +19,7 @@ const AvatarSelection: FC = () => {
     email: location.state.email,
     nickname: "guest", // 임의 설정
     password: location.state.pw,
-    clearquest: 3, // 임의 설정
+    clearquest: 5, // 임의 설정
   };
 
   const handleSelect = (res: number) => {
@@ -30,8 +30,8 @@ const AvatarSelection: FC = () => {
   };
 
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center ">
-      <div className="mt-5 mb-10 text-[32px] font-extrabold font-['NanumSquareNeoB']">
+    <div className="flex flex-col flex-wrap justify-center items-center mt-10">
+      <div className="mb-5 text-[32px] font-extrabold font-['NanumSquareNeoB']">
         캐릭터를 선택하세요
       </div>
 

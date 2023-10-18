@@ -3,8 +3,8 @@ import Login from "../components/Login";
 
 const Home: FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="mt-5 font-['Nunito'] text-zinc-800 text-[57.6px] font-extrabold leading-[70.40px]">
+    <div className="flex flex-col justify-center items-center mt-10">
+      <div className="mt-0 font-['Nunito'] text-zinc-800 text-[57.6px] font-extrabold leading-[70.40px]">
         CAU-Metaverse
       </div>
       <div className="font-['NanumSquareNeo'] text-gray text-[20px] font-normal leading-[34.63px]">

@@ -8,21 +8,22 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 
 function App() {
-  // user data
-
   return (
-    <BrowserRouter>
-      <div className="App relative">
-        <Logo className="mt-5 ml-5 static"></Logo>
-        <div className="mainBackground w-screen h-full"></div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/avatarselection" element={<AvatarSelection />} />
-          <Route path="/play" element={<MapPlay />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <div className="App relative">
+          <Logo className="mt-5 ml-5 static"></Logo>
+          <div className="mainBackground w-screen h-full"></div>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/avatarselection" element={<AvatarSelection />} />
+            <Route path="/play" element={<MapPlay />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
