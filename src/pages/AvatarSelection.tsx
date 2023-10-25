@@ -86,8 +86,13 @@ const AvatarSelection: FC = () => {
               className="mt-3 h-[320px] mx-auto p-3 "
             ></img>
           </div>
-
           <div className="h-[100px] flex flex-col items-center">
+            <div className="text-gray font-medium text-md ">
+              중앙대학교 대표 마스코트 푸앙이를 사용하여 가상의 학교를
+              거닐어보세요!
+            </div>
+          </div>
+          {/* <div className="h-[100px] flex flex-col items-center">
             <p className="text-gray font-medium text-md whitespace-prewrap">
               푸앙이 아바타를 지급 받으려면
             </p>
@@ -101,7 +106,7 @@ const AvatarSelection: FC = () => {
               </span>{" "}
               / 5
             </p>
-          </div>
+          </div> */}
           <div className="mt-3 self-center">
             {userData.clearquest >= 5 ? (
               <button

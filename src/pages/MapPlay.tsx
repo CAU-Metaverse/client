@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useLocation } from "react-router-dom";
 import { Unity, useUnityContext } from "react-unity-webgl";
-
+import { SyncLoader } from "react-spinners";
 const MapPlay: FC = () => {
   const location = useLocation();
 
@@ -17,6 +17,8 @@ const MapPlay: FC = () => {
     productVersion: "1.0.2",
   });
 
+  // spinner
+
   return (
     <div
       className="font-['NanumSquareNeo']"
@@ -25,7 +27,7 @@ const MapPlay: FC = () => {
         justifyContent: "center",
         alignItems: "center",
         // marginTop: "25px",
-        height: "90vh",
+        // height: "90vh",
       }}
     >
       {/* <p>== 유저 정보 ==</p>
@@ -36,8 +38,9 @@ const MapPlay: FC = () => {
       <Unity
         unityProvider={unityProvider}
         style={{
-          width: "90vw",
+          width: "95vw",
           borderRadius: "20px",
+          marginTop: "10px",
         }}
         className="shadow-lg bg-white"
       />
