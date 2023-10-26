@@ -14,7 +14,7 @@ const Home: FC = () => {
         가상의 중앙대학교 캠퍼스로 여행을 떠나보세요!
       </div>
       <button
-        className="absolute bottom-20 w-[380px] h-[75px] rounded-[39px] font-bold text-base font-['NanumSquareNeo'] animate-bounce bg-purple hover:bg-[#5136ffbc] text-[#FFFFFF]"
+        className="absolute bottom-20 w-[380px] h-[75px] rounded-[39px] font-bold text-base font-['NanumSquareNeo'] animate-bounce hover:bg-purple bg-[#5136ffbc] text-[#FFFFFF]"
         onClick={() => navigate("/avatarselection")}
       >
         입장하기

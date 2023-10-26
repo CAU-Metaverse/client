@@ -29,7 +29,7 @@ const AvatarSelection: FC = () => {
   };
 
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center mt-10">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col flex-wrap justify-center items-center">
       <div className="mb-5 text-[32px] font-extrabold font-['NanumSquareNeoB']">
         캐릭터를 선택하세요
       </div>

@@ -2,9 +2,9 @@ import React, { memo } from "react";
 import { ReactComponent as Logo } from "./assets/cau-metaverse.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AvatarSelection from "./pages/AvatarSelection";
-import MapPlay from "./pages/MapPlay";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
+import MapPlay from "./pages/MapPlay";
 
 import "./styles/main.css";
 
