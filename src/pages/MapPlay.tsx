@@ -36,7 +36,7 @@ const MapPlay: FC = () => {
         <div className="absolute right-2 top-1/2">
           <button
             className="font-['Nunito'] text-[16px] font-bold bg-black text-white pl-2.5 pr-2.5 pt-1 pb-1 shadow-lg rounded-[39px]"
-            onClick={() => navigate("/")}
+            onClick={() => (window.location.href = "/")}
           >
             X
           </button>
