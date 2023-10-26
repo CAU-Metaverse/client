@@ -8,9 +8,9 @@ const MapPlay: FC = () => {
   // unity webgl
   const { unityProvider } = useUnityContext({
     loaderUrl: "build/build.loader.js",
-    dataUrl: "build/build.data.unityweb",
-    frameworkUrl: "build/build.framework.js.unityweb",
-    codeUrl: "build/build.wasm.unityweb",
+    dataUrl: "build/build.data",
+    frameworkUrl: "build/build.framework.js",
+    codeUrl: "build/build.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "Metaverse",
@@ -29,6 +29,7 @@ const MapPlay: FC = () => {
         // marginTop: "25px",
         // height: "90vh",
       }}
+      id="unityContainer"
     >
       {/* <p>== 유저 정보 ==</p>
       <div>이메일 : {location.state.email}</div>
