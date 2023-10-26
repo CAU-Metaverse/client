@@ -1,17 +1,18 @@
 import React, { memo } from "react";
-import { ReactComponent as Logo } from "./assets/logo.svg";
+import { ReactComponent as Logo } from "./assets/cau-metaverse.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import AvatarSelection from "./pages/AvatarSelection";
 import MapPlay from "./pages/MapPlay";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 
+import "./styles/main.css";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="App relative">
+        <div className="App">
           <Logo className="mt-5 ml-5 static"></Logo>
           <div className="mainBackground w-screen h-full"></div>
 

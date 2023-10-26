@@ -12,13 +12,12 @@ interface FormData {
 const AvatarSelection: FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
-  // console.log(location.state.email, location.state.pw);
-
   const userData: FormData = {
-    email: location.state.email,
+    // email: location.state.email,
+    email: "test@gmail.com",
     nickname: "guest", // 임의 설정
-    password: location.state.pw,
+    // password: location.state.pw,
+    password: "testpassword",
     clearquest: 5, // 임의 설정
   };
 
@@ -42,7 +41,7 @@ const AvatarSelection: FC = () => {
               기본 캐릭터
             </div>
             <div className="bg-white text-gray w-[117px] h-[50px] font-['Nunito'] font-bold text-[15px] rounded-[39px]  flex justify-center items-center">
-              Free for all
+              Basic
             </div>
           </div>
 
@@ -88,8 +87,8 @@ const AvatarSelection: FC = () => {
           </div>
           <div className="h-[100px] flex flex-col items-center">
             <div className="text-gray font-medium text-md ">
-              중앙대학교 대표 마스코트 푸앙이를 사용하여 가상의 학교를
-              거닐어보세요!
+              중앙대학교 대표 마스코트 푸앙이를 사용하여 가상의 캠퍼스를
+              거닐어보세요.
             </div>
           </div>
           {/* <div className="h-[100px] flex flex-col items-center">
