@@ -1,30 +1,14 @@
 import React, { FC } from "react";
-import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-interface FormData {
-  readonly email: string;
-  readonly nickname: string;
-  readonly password: string;
-  clearquest: number;
-}
-
 const AvatarSelection: FC = () => {
-  const location = useLocation();
   const navigate = useNavigate();
-  const userData: FormData = {
-    // email: location.state.email,
-    email: "test@gmail.com",
-    nickname: "guest", // 임의 설정
-    // password: location.state.pw,
-    password: "testpassword",
-    clearquest: 5, // 임의 설정
-  };
 
-  const handleSelect = (res: number) => {
-    console.log(userData);
-    navigate("/play", {
-      state: { ...userData, avatar: res },
+  const handleSelect = (res: string) => {
+    // 다음 페이지로 아바타 선택 결과 전달
+    navigate("/createnickname", {
+      state: { res },
+      replace: true,
     });
   };
 
@@ -59,9 +43,9 @@ const AvatarSelection: FC = () => {
             </div>
           </div>
           <button
-            className="mt-3 self-center w-[168px] h-[60px] rounded-[39px] bg-black text-white font-semibold text-[16px] px-4 py-2 shadow-sm"
+            className="mt-3 self-center w-[168px] h-[60px] rounded-[39px] bg-black text-white font-semibold text-[16px] px-4 py-2 shadow-sm tracking-wider"
             onClick={() => {
-              handleSelect(0);
+              handleSelect("nendoroid");
             }}
           >
             선택하기
@@ -91,36 +75,15 @@ const AvatarSelection: FC = () => {
               거닐어보세요.
             </div>
           </div>
-          {/* <div className="h-[100px] flex flex-col items-center">
-            <p className="text-gray font-medium text-md whitespace-prewrap">
-              푸앙이 아바타를 지급 받으려면
-            </p>
-            <p className="text-gray font-medium text-md whitespace-prewrap">
-              <span className="font-bold text-purple ">5개</span> 이상의
-              퀘스트를 클리어해주세요!
-            </p>
-            <p className="mt-3 text-s text-black font-medium font-['Nunito'] ">
-              <span className="text-2xl font-extrabold">
-                {userData.clearquest}
-              </span>{" "}
-              / 5
-            </p>
-          </div> */}
           <div className="mt-3 self-center">
-            {userData.clearquest >= 5 ? (
-              <button
-                className=" w-[168px] h-[60px] rounded-[39px] bg-black text-white font-semibold text-[16px] px-4 py-2 shadow-sm"
-                onClick={() => {
-                  handleSelect(1);
-                }}
-              >
-                선택하기
-              </button>
-            ) : (
-              <button className="w-[168px] h-[60px] rounded-[39px] bg-[#FFEECC] text-[#C68A15] font-semibold text-[16px] px-4 py-2 shadow-sm">
-                조건 미충족
-              </button>
-            )}
+            <button
+              className=" w-[168px] h-[60px] rounded-[39px] bg-black text-white font-semibold text-[16px] px-4 py-2 shadow-sm tracking-wider"
+              onClick={() => {
+                handleSelect("puang");
+              }}
+            >
+              선택하기
+            </button>
           </div>
         </div>
       </div>
