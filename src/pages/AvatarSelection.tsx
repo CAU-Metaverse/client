@@ -23,7 +23,7 @@ const AvatarSelection: FC = () => {
 
         <div className="flex gap-[100px] font-['NanumSquareNeo']">
           <Hover>
-            <div className="bg-lgray p-8 pb-5 w-[450px] h-[670px]  rounded-[40px] shadow-md flex flex-col">
+            <div className="bg-lgray p-8 pb-5 w-[430px] h-[650px]  rounded-[40px] shadow-md flex flex-col">
               <div className="flex justify-between">
                 <div className="text-[30px] font-['NanumSquareNeoB'] font-bold">
                   기본 캐릭터
@@ -58,7 +58,7 @@ const AvatarSelection: FC = () => {
           </Hover>
 
           <Hover>
-            <div className="bg-lgray p-8 pb-5 w-[450px] h-[670px]  rounded-[40px] shadow-md flex flex-col">
+            <div className="bg-lgray p-8 pb-5 w-[430px] h-[650px]  rounded-[40px] shadow-md flex flex-col">
               <div className="flex justify-between">
                 <div className="text-[30px] font-['NanumSquareNeoB'] font-bold">
                   푸앙이
