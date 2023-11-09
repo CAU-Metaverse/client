@@ -31,6 +31,7 @@ const CreateNickname: FC = () => {
     if (userInput.length >= 1) {
       // 세션스토리지에 사용자 닉네임 저장
       sessionStorage.setItem("userNickname", inputValue);
+      sessionStorage.setItem("userAvatar", avatarSelectRes);
       navigate("/play", {
         state: { avatar: avatarSelectRes },
         replace: true,
