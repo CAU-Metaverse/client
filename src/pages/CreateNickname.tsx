@@ -27,8 +27,9 @@ const CreateNickname: FC = () => {
       "nicknameInput"
     ) as HTMLInputElement;
     const userInput = inputElement.value.trim();
+    const hasSpecialCharacters = /[!@#$%^&*(),.?":{}|<>;]/.test(userInput); // 특수 문자 방지
 
-    if (userInput.length >= 1) {
+    if (userInput.length >= 1 && !hasSpecialCharacters) {
       // 세션스토리지에 사용자 닉네임 저장
       sessionStorage.setItem("userNickname", inputValue);
       sessionStorage.setItem("userAvatar", avatarSelectRes);
@@ -73,10 +74,10 @@ const CreateNickname: FC = () => {
             </div>
             <div className="h-[80px] mb-3 flex flex-col justify-center items-center ">
               <input
-                className="text-gray bg-white font-medium text-sm w-[350px] h-[50px] p-2 pl-4 pr-4 tracking-wide rounded-[20px] shadow-sm"
+                className="text-gray bg-white font-medium text-xs w-[350px] h-[50px] p-2 pl-4 pr-4 tracking-wide rounded-[20px] shadow-sm"
                 type="text"
                 id="nicknameInput"
-                placeholder="닉네임 입력(공백 포함 최대 10자)"
+                placeholder="닉네임 입력(특수문자 불가. 공백 포함 최대 10자)"
                 value={inputValue}
                 onChange={handleInputChange}
                 maxLength={10}
