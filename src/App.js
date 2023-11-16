@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <Logo className="mt-5 ml-5 static"></Logo>
-      <div className="mainBackground w-screen h-full"></div>
       <AnimatePresence>
         <Routes location={location}>
           <Route path="/" element={<Home />} />

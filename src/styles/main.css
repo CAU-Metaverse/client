@@ -32,3 +32,67 @@
   z-index: -1;
   */
 }
+
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 배경 비디오*/
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 60%) 100%
+  );
+}
+
+.enter-button {
+  animation: smoothAppear 2s;
+  background: linear-gradient(
+    277deg,
+    #25f6ff -15.41%,
+    #7782ff 52.42%,
+    #ff5196 107.79%
+  );
+  /*
+  background: linear-gradient(
+    102deg,
+    #7782ff -0.72%,
+    #9ba3ff 25.01%,
+    #e1a3ff 100.49%
+  );
+  */
+}

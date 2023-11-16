@@ -44,6 +44,7 @@ const CreateNickname: FC = () => {
 
   return (
     <Wrapper>
+      <div className="mainBackground w-screen h-full"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col flex-wrap justify-center items-center">
         <div className="mb-10 text-[32px] font-extrabold font-['NanumSquareNeoB']">
           캐릭터의 이름을 지어주세요
