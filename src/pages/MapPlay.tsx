@@ -26,20 +26,21 @@ const MapPlay: FC = () => {
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         id="unityContainer"
       >
-        <Unity
-          unityProvider={unityProvider}
-          className="w-[95vw] h-[90vh] rounded-[20px] mt-5 shadow-lg bg-white"
-        />
-        {isLoaded && (
-          <div className="absolute right-2 top-1/2">
+        {/* {
+          <div className="relative flex flex-row ">
             <button
-              className="font-['Nunito'] text-[16px] font-bold bg-black text-white pl-2.5 pr-2.5 pt-1 pb-1 shadow-lg rounded-[39px]"
+              className="relative ml-auto right-0 top-0 font-['Nunito'] text-[16px] font-bold bg-black text-white pl-2.5 pr-2.5 pt-1 pb-1 shadow-lg rounded-[39px]"
               onClick={() => (window.location.href = "/")}
             >
               X
             </button>
           </div>
-        )}
+        } */}
+        <Unity
+          unityProvider={unityProvider}
+          className="w-[95vw] h-[90vh] rounded-[20px] mt-5 shadow-lg bg-white"
+        />
+
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {isLoaded === false && (
             <p className="text-[20px] font-['Nunito'] font-bold text-gray">
