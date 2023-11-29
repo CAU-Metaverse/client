@@ -9,7 +9,7 @@ const Home: FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -18,16 +18,16 @@ const Home: FC = () => {
     <Wrapper>
       <div id="video-container">
         <video id="background-video" autoPlay muted loop>
-          <source src="video/test.mp4" type="video/mp4" />
+          <source src="video/test2.mp4" type="video/mp4" />
         </video>
         <div className="gradient-overlay"></div>
       </div>
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col w-[100vw] h-[80vh] justify-center items-center">
-        <div className="absolute top-20 font-['Nunito'] text-zinc-800 text-[60px] font-extrabold leading-[70.40px]">
+        <div className="absolute top-8 font-['Nunito'] text-zinc-800 text-[60px] font-extrabold leading-[70.40px]">
           CAU-Planet
         </div>
-        <div className="absolute top-20 mt-[80px] font-['NanumSquareNeo'] text-white text-[20px] font-normal leading-[34.63px]">
+        <div className="absolute top-8 mt-[80px] font-['NanumSquareNeo'] text-black text-[20px] font-normal leading-[34.63px]">
           중앙대학교 캠퍼스로 여행을 떠나보세요!
         </div>
         {showButton && (
